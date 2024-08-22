@@ -37,6 +37,24 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+
+        /* Hide list items when the 'hide-menu' class is added */
+        header.hide-menu nav ul {
+            display: none;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                background-color: var(--primary-color);
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
         
         .logo {
             font-size: 1.8rem;
